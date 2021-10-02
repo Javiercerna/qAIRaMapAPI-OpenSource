@@ -3,9 +3,9 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 # You need to replace the next values with the appropriate values for your configuration
 
-env = "prod"
+env = "local"
 if env == "local":
-    print("Using release configuration...")
+    print("Using local configuration...")
     SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI_OPEN")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     BASE_URL = 'http://0.0.0.0:5000/'
